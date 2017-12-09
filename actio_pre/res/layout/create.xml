@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:autoLink="web"
+	    android:text="To create an activity go to actio.blaced.net\n\n (It is suggested to do this on the computer.)"
+	    android:textColor="#0080c2"
+	    android:textColorLink="#e53b3b"
+	    android:textSize="32sp" />
+
+</LinearLayout>

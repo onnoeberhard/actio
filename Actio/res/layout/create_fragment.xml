@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" >
+    
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="6dp"
+		android:layout_marginRight="6dp"
+		android:layout_marginTop="4dp"
+		android:layout_marginBottom="4dp"
+		android:padding="8dp"
+		android:background="@drawable/card">
+
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+    		android:textColor="#505050"
+    		android:textSize="48sp"
+		    android:text="Create"/>
+
+	</LinearLayout>
+	
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_marginLeft="6dp"
+		android:layout_marginRight="6dp"
+		android:layout_marginTop="4dp"
+		android:layout_marginBottom="4dp"
+		android:padding="8dp"
+		android:orientation="vertical"
+		android:background="@drawable/card">
+
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+        
+			<TextView 
+			    android:layout_height="wrap_content"
+			    android:layout_width="0dp"
+	    		android:textColor="#505050"
+	    		android:textSize="22sp"
+	    		android:maxLines="1"
+	    		android:layout_weight=".7"
+	    		android:fontFamily="sans-serif-light"
+			    android:text="NaturErlebnisBad Luthe"/>
+			
+			<TextView 
+			    android:layout_height="match_parent"
+			    android:layout_width="0dp"
+	    		android:textColor="#505050"
+	    		android:textSize="12sp"
+	    		android:maxLines="1"
+	    		android:layout_weight=".3"
+	    		android:fontFamily="sans-serif-light"
+	    		android:gravity="top|right"
+			    android:text="WATER PARK"/>
+
+		</LinearLayout>
+		
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+        	<RelativeLayout 
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_weight=".25">
+        	    
+        	    <RelativeLayout 
+        	        android:layout_width="50dp"
+        	        android:layout_height="50dp"
+        	        android:background="#0ab246"
+        	        android:layout_centerInParent="true"/>
+        	    
+        	</RelativeLayout>
+        	
+        	<LinearLayout 
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:orientation="vertical"
+        	    android:layout_weight=".6">
+        	    
+        	    <TextView 
+        	        android:layout_width="match_parent"
+        	        android:layout_height="0dp"
+        	        android:layout_weight=".5"
+	    			android:textColor="#505050"
+	    			android:gravity="center_vertical"
+        	        android:fontFamily="sans-serif-light"
+        	        android:text="Luthe (Wunstorf)"/>
+        	    
+        	    <RatingBar 
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="0dp"
+        	        android:layout_weight=".5"
+	    			android:paddingTop="3dp"
+	    			android:isIndicator="true"
+        	        android:rating="3"
+        	        android:numStars="5"
+        	        style="@style/RatingBarSmallAppTheme"/>
+        	    
+        	</LinearLayout>
+        	
+        	<LinearLayout 
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_weight=".15"
+        	    android:orientation="vertical"
+        	    android:gravity="bottom">
+        	    
+        	    <TextView 
+        	        android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+	    			android:textColor="#505050"
+        	        android:fontFamily="sans-serif-light"
+        	        android:gravity="bottom|right"
+        	        android:text="8km"/>
+        	    
+<!--         	    <TextView  -->
+<!--         	        android:layout_width="match_parent" -->
+<!--         	        android:layout_height="wrap_content" -->
+<!-- 	    			android:textColor="#505050" -->
+<!--         	        android:fontFamily="sans-serif-light" -->
+<!--         	        android:gravity="bottom|right" -->
+<!--         	        android:text="20min"/> -->
+        	    
+        	</LinearLayout>
+        
+        </LinearLayout>
+		
+	</LinearLayout>
+	
+</LinearLayout>

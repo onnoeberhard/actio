@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<android.support.v4.widget.DrawerLayout
+	    android:id="@+id/drawer_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <!-- The main content view -->
+	    <FrameLayout
+	        android:id="@+id/content_frame"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	    <!-- The navigation drawer -->
+	    <ListView android:id="@+id/left_drawer"
+	        android:layout_width="240dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="start"
+	        android:choiceMode="singleChoice"
+	        android:divider="#e1e1e1"
+	        android:dividerHeight="2px"
+	        android:background="#f3f3f4"
+	        android:stackFromBottom="false"
+			android:transcriptMode="normal"/>
+	</android.support.v4.widget.DrawerLayout>
+	
+	<ProgressBar
+	    android:id="@+id/loading" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone"/>
+
+</RelativeLayout>

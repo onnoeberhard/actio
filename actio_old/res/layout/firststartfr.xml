@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#10000000"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Home Address"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:onClick="firststart_homeaddress_why"
+                    android:text="\?" />
+                
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/firststart_homeaddress_street"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Street &amp; House Number" />
+
+            <EditText
+                android:id="@+id/firststart_homeaddress_city"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="ZIP-Code &amp; City" />
+
+            <Spinner
+                android:id="@+id/firststart_homeaddress_country"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Contry" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/firststart_homeaddress_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="firststart_ok"
+                android:text="Skip &amp; don\&apos;t show again" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="firststart_skip"
+                android:text="Skip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

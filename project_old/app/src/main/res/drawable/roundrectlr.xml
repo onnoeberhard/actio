@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- "shadow" -->
+    <!-- <item>
+        <bitmap android:src="@drawable/card_shadow" >
+        </bitmap>
+    </item> -->
+    <item >
+        <shape
+            android:dither="true"
+            android:shape="rectangle" >
+            <corners android:radius="2dp" />
+
+            <solid android:color="#7fffffff" />
+
+            <stroke
+                android:width="0px"
+                android:color="#dddddd" />
+
+            <padding
+                android:bottom="8dp"
+                android:left="8dp"
+                android:right="8dp"
+                android:top="8dp" />
+        </shape>
+    </item>
+
+</layer-list>
+
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <layer-list xmlns:android="http://schemas.android.com/apk/res/android"> -->
+	
+<!-- 	<item> -->
+<!-- 		<shape android:shape="rectangle" -->
+<!-- 			android:dither="true"> -->
+
+<!-- 			<corners android:radius="2dp"/> -->
+
+<!-- 			<solid android:color="#ccc" /> -->
+
+<!-- 				<solid android:color="#7fcccccc" /> -->
+<!-- 				<gradient android:angle="270" android:startColor="#bdcccccc" android:endColor="#55cccccc" /> -->
+
+<!-- 		</shape> -->
+<!-- 	</item> -->
+	
+<!-- 	<item android:bottom="2dp"> -->
+<!-- 		<shape android:shape="rectangle" -->
+<!-- 			android:dither="true"> -->
+
+<!-- 			<corners android:radius="2dp"/> -->
+
+<!-- 			<solid android:color="#FFBB33" /> -->
+
+<!-- 		</shape> -->
+<!-- 	</item> -->
+
+<!-- 	<item android:bottom="2dp"> -->
+<!-- 		<shape android:shape="rectangle" -->
+<!-- 			android:dither="true"> -->
+
+<!-- 			<corners android:radius="2dp"/> -->
+
+<!-- 			<solid android:color="@android:color/white" /> -->
+
+<!-- 			<padding -->
+<!-- 			    android:bottom="8dp" -->
+<!-- 			    android:left="8dp" -->
+<!-- 			    android:right="8dp" -->
+<!-- 			    android:top="8dp" /> -->
+			
+<!-- 		</shape> -->
+<!-- 	</item> -->
+	
+<!-- 	<item android:bottom="2dp" android:left="300dp"> -->
+<!-- 		<shape android:shape="rectangle" -->
+<!-- 			android:dither="true"> -->
+
+<!-- 			<corners android:topRightRadius="2dp" android:bottomRightRadius="2dp"/> -->
+
+<!-- 			<gradient android:startColor="@android:color/white" android:endColor="#FFBB33" /> -->
+
+<!-- 			<padding -->
+<!-- 			    android:bottom="8dp" -->
+<!-- 			    android:left="8dp" -->
+<!-- 			    android:right="8dp" -->
+<!-- 			    android:top="8dp" /> -->
+
+<!-- 		</shape> -->
+<!-- 	</item> -->
+	
+<!-- </layer-list> -->

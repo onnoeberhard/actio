@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startpg_bg">
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:gravity="center"
+	        android:orientation="vertical">
+			
+			<ImageView
+				android:layout_height="50dp"
+				android:layout_width="300dp"
+				android:layout_marginTop="15dp"
+			    android:src="@drawable/actionew" />
+			
+			<TextView 
+			    android:id="@+id/phonenumber_notice"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="25dp"
+			    android:gravity="center"
+			    android:textSize="19sp"
+			    android:textColor="#fff"
+			    android:text="Link this account with your facebook to connect to you friends!"/>
+
+			<ProgressBar 
+			    android:id="@+id/loading"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:visibility="gone"
+			    android:layout_margin="30dp"
+			    android:gravity="center"/>
+			
+		</LinearLayout>
+		
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:background="@drawable/roundrectlr"
+			android:layout_centerInParent="true"
+	        android:orientation="vertical">
+            
+<!--             <Button  -->
+<!-- 	            android:id="@+id/okbutton" -->
+<!-- 	            android:layout_width="200dp" -->
+<!-- 	            android:layout_height="50dp" -->
+<!-- 	            android:layout_weight=".75" -->
+<!-- 	            android:textColor="#fff" -->
+<!-- 	            android:text="Connect to Facebook" -->
+<!-- 	            android:onClick="go_on"/> -->
+        
+        	<com.facebook.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                facebook:confirm_logout="false"
+                facebook:login_text="Connect to Facebook"
+                facebook:fetch_user_info="true" />
+	        
+		</LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/skipview"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:orientation="vertical"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="30dp"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_horizontal">
+	    
+<!-- 		    <CheckBox -->
+<!-- 		        android:id="@+id/skipfecb" -->
+<!-- 		        android:layout_width="wrap_content" -->
+<!-- 				android:textColor="#fff" -->
+<!-- 		        android:layout_height="wrap_content" -->
+<!-- 		        android:text="Don\'t show again"/> -->
+		    
+			<Button 
+			    android:id="@+id/skipbutton"
+				android:layout_width="200dp"
+				android:layout_height="50dp"
+				android:textColor="#fff"
+				android:text="Skip"
+				android:onClick="skip"/>
+	    
+		</LinearLayout>
+	
+	</RelativeLayout>
+    
+</RelativeLayout>

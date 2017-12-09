@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/actionew" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="75dp" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/roundrectlr"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColorHint="#61a479"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:textColorHint="#61a479"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/lrbackbutton"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight=".25"
+                        android:onClick="backbutton"
+                        android:text="◀"
+                        android:textColor="#fff"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/registerbutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:onClick="register"
+                            android:text="Register"
+                            android:textColor="#fff" />
+
+                        <Button
+                            android:id="@+id/loginbutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:onClick="login"
+                            android:text="Log In"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:background="@drawable/borderless_button"
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:onClick="forgotPassword"
+                    android:text="Forgot Password"
+                    android:textColor="#60000000"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+                <!-- in resource <u>string</u> verwenden für underline! -->
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/skipview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/skipfecb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don\&apos;t show again"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:onClick="skip"
+            android:text="Skip"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/startpg_count3" />
+
+</RelativeLayout>

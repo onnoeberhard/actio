@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" >
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Goto Home"
+        android:textSize="24sp"
+        android:background="@drawable/borderless_button"
+        android:onClick="home"/>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/home_note_list" />
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-60dp"
+        android:text="Add note"
+        android:textSize="24sp"
+        android:background="@drawable/borderless_button"
+        android:onClick="addnote"/>
+    
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="agreen">#0ab246</color>
+    <color name="half_dt">#33ffffff</color>
+    <color name="bit_dt">#33ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+</resources>

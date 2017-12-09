@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actio</string>
+    <string name="app_id">611441318932428</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="error_sorry">An error occurred! We\'re sorry!</string>
+    <string-array name="drawer_array">
+        <item name="start">Home</item>
+        <item name="explore">Explore</item>
+        <item name="map">Map</item>
+        <item name="me">Me</item>
+        <item name="friends">Friends</item>
+        <item name="settings">Settings</item>
+    </string-array>
+
+</resources>

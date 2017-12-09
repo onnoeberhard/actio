@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="actio.actio" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="actio.actio.functions.ActioApp">
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAEQZRNlvbjPbbIdDOzg1fLrmJbZCki74w"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity
+            android:icon="@drawable/ic_launcher"
+            android:name="actio.actio.functions.ActivityControl"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="actio.actio.ActivityMain" />
+        <activity android:name="actio.actio.DevNoteActivity" />
+        <activity
+            android:name="actio.actio.PlaceDetailsActivity"
+            android:parentActivityName="actio.actio.ActivityMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="actio.app.ActivityMain" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="actio"
+                    android:host="details" />
+            </intent-filter>
+        </activity>
+        <activity android:name="actio.actio.functions.SearchResultsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:name="com.facebook.LoginActivity"/>
+        <activity android:name="actio.actio.functions.ImageGallery" />
+        <activity android:name="actio.actio.ExploreActivity" />
+        <activity android:name="actio.actio.CreateActivity" />
+        <activity android:name="actio.actio.BrowseCategoriesActivity" />
+        <activity android:name="actio.actio.MapActivity" />
+        <!--<activity android:name="actio.actio.ScanActivity" />-->
+        <activity android:name="actio.actio.Settings" />
+        <activity android:name="actio.actio.ProfileActivity" />
+        <activity android:name="actio.actio.FriendsActivtiy" />
+        <activity android:name="actio.actio.DiscoverLocationActivity" />
+        <activity android:name="actio.actio.ActivityDetailsActivity" />
+        <activity android:name="actio.actio.ActivityStart" android:screenOrientation="portrait" />
+        <activity android:name="actio.actio.PhoneNumberActivity" android:screenOrientation="portrait" />
+        <activity android:name="actio.actio.FacebookLinkActivity" android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

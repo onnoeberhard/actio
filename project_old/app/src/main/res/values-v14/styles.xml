@@ -1,0 +1,65 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="_AppTheme">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <style name="_AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+		<item name="android:textColorHighlight">#990ab246</item>
+		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+		<item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+		<item name="android:radioButtonStyle">@style/RadioButtonAppTheme</item>
+		<item name="android:buttonStyle">@style/ButtonAppTheme</item>
+		<item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+		<item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+		<item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+		<item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+		<item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+		<item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+		<item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+		<item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+		<item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+		<item name="android:listViewStyle">@style/ListViewAppTheme</item>
+		<item name="android:listViewWhiteStyle">@style/ListViewAppTheme.White</item>
+		<item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_actionbarstyle</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Actionbarstyle</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Actionbarstyle</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Actionbarstyle</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Actionbarstyle</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Actionbarstyle</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_actionbarstyle</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_actionbarstyle</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Actionbarstyle</item>
+		<item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>
+        
+        
+    </style>
+    
+    <style name="ActionBar.Solid.Actionbarstyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_actionbarstyle</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_actionbarstyle</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_actionbarstyle</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Actionbarstyle</item>
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="android:icon">@drawable/actionbar_home_icon</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Actionbarstyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_actionbarstyle</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Actionbarstyle</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+<!--     <style name="Theme.Actionbarstyle.Widget" parent="@style/Theme.AppCompat"> -->
+<!--         <item name="android:popupMenuStyle">@style/PopupMenu.Actionbarstyle</item> -->
+<!--         <item name="android:dropDownListViewStyle">@style/DropDownListView.Actionbarstyle</item> -->
+<!--     </style> -->
+    
+</resources>
